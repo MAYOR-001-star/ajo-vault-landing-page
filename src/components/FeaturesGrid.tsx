@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiExclamationCircle, HiCheckCircle, HiClipboardList, HiUsers, HiChartBar } from 'react-icons/hi';
 
 const FeaturesGrid = () => {

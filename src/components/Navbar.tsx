@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { HiShieldCheck, HiMenu, HiX } from 'react-icons/hi';
 
 const Navbar = () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiShieldCheck, HiOutlineLockClosed, HiOutlineKey } from 'react-icons/hi';
 
 const Security = () => {

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { HiPlay, HiArrowRight, HiCheckCircle, HiMail } from 'react-icons/hi';
+import { useState } from 'react';
+import { HiCheckCircle, HiMail } from 'react-icons/hi';
 
 const Hero = () => {
   const [email, setEmail] = useState('');

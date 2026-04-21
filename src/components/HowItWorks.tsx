@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiUserAdd, HiCog, HiUsers, HiArrowCircleUp } from 'react-icons/hi';
 
 const steps = [

@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiDeviceMobile, HiLightningBolt, HiHeart, HiTrendingUp } from 'react-icons/hi';
 
 const Community = () => {

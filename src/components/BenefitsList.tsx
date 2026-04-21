@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiShieldCheck, HiViewGrid, HiCreditCard, HiBadgeCheck } from 'react-icons/hi';
 
 const benefits = [

@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiShieldCheck } from 'react-icons/hi';
 import { FaTwitter, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
