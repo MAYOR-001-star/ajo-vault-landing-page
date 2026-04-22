@@ -34,23 +34,23 @@ const HowItWorks = () => {
         </div>
 
         <div className="relative">
-          {/* Connecting Line */}
-          <div className="absolute top-12 left-0 right-0 h-0.5 bg-slate-100 hidden lg:block" />
+          {/* Connecting Line - Premium Style */}
+          <div className="absolute top-12 left-0 right-0 h-[2px] bg-accent-blue/20 hidden lg:block" />
           
           <div className="grid lg:grid-cols-4 gap-12 text-center">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="relative flex flex-col items-center group opacity-100 translate-y-0"
+                className="relative flex flex-col items-center opacity-100 translate-y-0"
               >
-                <div className="w-24 h-24 rounded-full bg-primary-blue text-white flex items-center justify-center mb-8 relative z-10 group-hover:bg-accent-blue transition-colors border-8 border-white shadow-2xl text-4xl">
+                <div className="w-24 h-24 rounded-full bg-primary-blue text-white flex items-center justify-center mb-8 relative z-10 border-8 border-white shadow-2xl text-4xl">
                   <step.icon />
-                  <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-accent-blue text-white font-black flex items-center justify-center text-sm border-2 border-white shadow-lg">
+                  <div className="absolute -top-1 -right-1 w-9 h-9 rounded-full bg-accent-blue text-white font-black flex items-center justify-center text-sm border-2 border-white shadow-lg">
                     {index + 1}
                   </div>
                 </div>
                 <h4 className="text-2xl font-black text-primary-blue mb-4 font-outfit tracking-tight">{step.title}</h4>
-                <p className="text-slate-500 leading-relaxed max-w-[200px] font-medium">{step.description}</p>
+                <p className="text-slate-500 leading-relaxed max-w-[200px] font-medium text-sm">{step.description}</p>
               </div>
             ))}
           </div>

@@ -16,26 +16,26 @@ const Hero = () => {
       {/* Background abstract shapes */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent-blue/10 rounded-full blur-[120px] -mr-64 -mt-64" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] -ml-40 -mb-40" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+
+      <div className="container mx-auto px-6 relative z-10 pb-[5rem]">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="transition-all duration-1000 transform translate-x-0 opacity-100">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-accent-blue text-xs font-bold tracking-widest mb-8 uppercase">
               <span className="flex h-2 w-2 rounded-full bg-accent-blue animate-pulse" />
               Launching Soon • Join the Movement
             </div>
-            
+
             <h1 className="text-6xl lg:text-8xl font-black text-white leading-[1] mb-8 font-outfit tracking-tighter">
               Digitizing <br />
               <span className="text-accent-blue">Community</span> <br />
               Savings.
             </h1>
-            
+
             <p className="text-xl text-white/70 mb-10 max-w-xl leading-relaxed font-medium">
-              AjoVault brings trust and efficiency to traditional community savings (Ajo/Esusu). 
+              AjoVault brings trust and efficiency to traditional community savings (Ajo/Esusu).
               Automate contributions, track payouts in real-time, and build a credit history while you save.
             </p>
-            
+
             {/* Waitlist Section */}
             <div className="mb-12 max-w-md">
               <form onSubmit={handleWaitlist} className="relative flex items-center">
@@ -61,12 +61,12 @@ const Hero = () => {
                 Be the first to know when we launch and get early access benefits.
               </p>
             </div>
-            
+
             <div className="flex items-center gap-4">
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-10 h-10 rounded-full border-2 border-primary-blue bg-slate-800 flex items-center justify-center overflow-hidden">
-                    <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="user" className="w-full h-full object-cover" />
+                    <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="user" className="w-full h-full object-cover" />
                   </div>
                 ))}
                 <div className="w-10 h-10 rounded-full border-2 border-primary-blue bg-accent-blue flex items-center justify-center text-[10px] font-black text-white">
@@ -78,19 +78,19 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="relative transition-all duration-1000 transform scale-100 translate-y-0 opacity-100">
             {/* Mockup Container */}
             <div className="relative z-10 glass-card rounded-[3rem] border border-white/10 shadow-3xl overflow-hidden bg-white/5 backdrop-blur-sm p-4 translate-y-4 font-outfit uppercase tracking-tighter">
-              <img 
-                src="/ajovault_hero_dashboard_1776691254384.png" 
-                alt="AjoVault Dashboard" 
-                className="rounded-[2.5rem] w-full h-auto shadow-2xl"
+              <img
+                src="/ajovault_isometric_dashboard_blue_1776872371844.png"
+                alt="AjoVault Isometric Dashboard"
+                className="rounded-[2.5rem] w-full h-auto shadow-2xl scale-110 translate-x-4"
               />
             </div>
-            
+
             {/* Floating UI Elements */}
-            <div className="absolute -top-12 -right-12 z-20 bg-[#1e293b]/90 backdrop-blur-md border border-white/10 p-5 rounded-[2rem] shadow-2xl hidden md:block animate-float">
+            <div className="absolute -top-12 right-4 z-20 bg-[#1e293b]/90 backdrop-blur-md border border-white/10 p-5 rounded-[2rem] shadow-2xl hidden md:block animate-float">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-accent-blue/20 flex items-center justify-center text-2xl">
                   <HiCheckCircle className="text-accent-blue" />
@@ -104,7 +104,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Wave bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-[#F8FAFC]" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 80%)' }} />
     </section>

@@ -17,9 +17,9 @@ const Footer = () => {
             Start building your financial future today.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-            <button className="bg-accent-blue hover:bg-blue-600 text-white px-12 py-5 rounded-full font-black text-lg transition-transform hover:scale-105 active:scale-95 shadow-xl shadow-accent-blue/20 font-outfit uppercase tracking-widest">
+            <a href="https://www.ajovault.ng/" target="_blank" className="bg-accent-blue hover:bg-blue-600 text-white px-12 py-5 rounded-full font-black text-lg transition-transform hover:scale-105 active:scale-95 shadow-xl shadow-accent-blue/20 font-outfit uppercase tracking-widest">
               SIGN UP NOW
-            </button>
+            </a>
             <button className="bg-transparent hover:bg-white/5 text-white border border-white/20 px-12 py-5 rounded-full font-black text-lg transition-all font-outfit uppercase tracking-widest">
               Learn More
             </button>

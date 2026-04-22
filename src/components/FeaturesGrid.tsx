@@ -1,4 +1,4 @@
-import { HiExclamationCircle, HiCheckCircle, HiClipboardList, HiUsers, HiChartBar } from 'react-icons/hi';
+import { HiExclamationCircle, HiCheckCircle, HiClipboardList, HiUsers, HiChartBar, HiBookOpen, HiEyeOff, HiLockClosed, HiPresentationChartLine, HiShieldCheck, HiArrowCircleUp } from 'react-icons/hi';
 
 const FeaturesGrid = () => {
   const points = [
@@ -7,7 +7,8 @@ const FeaturesGrid = () => {
       problemDesc: 'Outdated systems lead to errors and disputes. Tracking contributions by hand is risky and inefficient.',
       solutionTitle: 'Automated Ledger',
       solutionDesc: 'AjoVault automates everything with digital precision. Every kobo is accounted for in real-time.',
-      icon: HiClipboardList,
+      problemIcon: HiBookOpen,
+      solutionIcon: HiClipboardList,
       color: 'blue'
     },
     {
@@ -15,7 +16,8 @@ const FeaturesGrid = () => {
       problemDesc: 'Members often lack visibility into group savings, leading to mistrust and communication gaps.',
       solutionTitle: 'Real-time Visibility',
       solutionDesc: 'Get a clear view of contributions, payouts, and group standing directly from your dashboard.',
-      icon: HiUsers,
+      problemIcon: HiEyeOff,
+      solutionIcon: HiPresentationChartLine,
       color: 'purple'
     },
     {
@@ -23,7 +25,8 @@ const FeaturesGrid = () => {
       problemDesc: "Traditional savings don't contribute to your credit history, making formal loans unreachable.",
       solutionTitle: 'Credit Score Building',
       solutionDesc: 'Now your consistent contributions help build your credit rating, unlocking formal financial tools.',
-      icon: HiChartBar,
+      problemIcon: HiLockClosed,
+      solutionIcon: HiArrowCircleUp,
       color: 'emerald'
     },
   ];
@@ -48,9 +51,9 @@ const FeaturesGrid = () => {
               className="grid lg:grid-cols-2 gap-8 items-stretch"
             >
               {/* Problem Card */}
-              <div className="p-8 lg:p-12 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative overflow-hidden group hover:bg-slate-100 transition-colors">
+              <div className="p-8 lg:p-12 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative overflow-hidden group transition-colors">
                 <div className="absolute top-0 right-0 p-8 text-slate-200 text-6xl group-hover:text-slate-300 transition-colors">
-                  <HiExclamationCircle />
+                  <point.problemIcon />
                 </div>
                 <div className="relative z-10">
                   <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">The Problem</h4>
@@ -60,9 +63,9 @@ const FeaturesGrid = () => {
               </div>
 
               {/* Solution Card */}
-              <div className="p-8 lg:p-12 rounded-[2.5rem] bg-primary-blue text-white relative overflow-hidden group hover:bg-slate-900 transition-all border border-white/5">
+              <div className="p-8 lg:p-12 rounded-[2.5rem] bg-primary-blue text-white relative overflow-hidden group transition-all border border-white/5">
                 <div className="absolute top-0 right-0 p-8 text-white/5 text-6xl group-hover:text-white/10 transition-colors">
-                  <HiCheckCircle />
+                  <point.solutionIcon />
                 </div>
                 <div className="relative z-10">
                   <h4 className="text-sm font-bold text-accent-blue uppercase tracking-widest mb-4">The Solution</h4>
@@ -70,7 +73,7 @@ const FeaturesGrid = () => {
                   <p className="text-white/60 leading-relaxed max-w-sm">{point.solutionDesc}</p>
                   
                   <div className={`mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-accent-blue font-bold text-xs`}>
-                    <point.icon className="text-lg" />
+                    <point.solutionIcon className="text-lg" />
                     Feature Enabled
                   </div>
                 </div>
