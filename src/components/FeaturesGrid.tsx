@@ -1,4 +1,4 @@
-import { HiExclamationCircle, HiCheckCircle, HiClipboardList, HiUsers, HiChartBar, HiBookOpen, HiEyeOff, HiLockClosed, HiPresentationChartLine, HiShieldCheck, HiArrowCircleUp } from 'react-icons/hi';
+import { HiClipboardList, HiBookOpen, HiEyeOff, HiLockClosed, HiPresentationChartLine, HiArrowCircleUp } from 'react-icons/hi';
 
 const FeaturesGrid = () => {
   const points = [
